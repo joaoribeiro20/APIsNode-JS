@@ -1,0 +1,7 @@
+const { Pool } = require('pg');
+const poolc = new Pool({
+    connectionString: process.env.POSTGRES_URL
+})
+
+
+export {poolc}
